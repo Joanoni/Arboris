@@ -1,0 +1,21 @@
+# --- Arboris System Secrets & Private Logic ---
+.env
+.config/
+.decision_meta/
+
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- IDE & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

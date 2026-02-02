@@ -1,0 +1,51 @@
+{
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "response_mime_type": "application/json",
+    "response_schema": {
+        "type": "object",
+        "required": [
+            "action_id",
+            "chat_response",
+            "commit_message"
+        ],
+        "properties": {
+            "action_id": {
+                "type": "integer"
+            },
+            "chat_response": {
+                "type": "string"
+            },
+            "commit_message": {
+                "type": "string"
+            },
+            "summary": {
+                "type": "string",
+                "nullable": true
+            },
+            "inactivation_report": {
+                "type": "string",
+                "nullable": true
+            },
+            "alternatives": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "title",
+                        "content"
+                    ],
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "content": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
